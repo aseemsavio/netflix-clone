@@ -1,12 +1,13 @@
 .row {
-    margin-left: 20px;
+    color: white;
+    margin-left: 10px;
 }
 
 .row__poster {
     /* object-fit keeps the aspect ratio */
     object-fit: contain;
     width: 100%;
-    max-height: 150px;
+    max-height: 100px;
     /* This will add a minute delay in for transition eg: during hover over */
     transition: transform 450ms;
     margin-right: 15px;
@@ -25,14 +26,14 @@
 }
 
 .row__posterLarge {
-    max-height: 300px;
+    max-height: 200px;
 }
 
  /* Didn't work on Chrome on Ubuntu. */
 /* Don't display the scrollbar. but keep the functionality by gestures. */
-/* .row__posters::-webkit-scrollbar {
+.row__posters::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .row__poster:hover {
     transform: scale(1.08);
